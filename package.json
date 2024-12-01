@@ -3,15 +3,17 @@
 	"version": "1.0.0",
 	"main": "bot.ts",
 	"scripts": {
-		"start": "ts-node bot.ts"
+		"start:dev": "nodemon src/main.ts",
+		"start:prod": "node dist/main.js"
 	},
 	"dependencies": {
-		"grammy": "^1.32.0", 
+		"dotenv": "^16.4.5",
+		"grammy": "^1.32.0",
 		"nodemon": "^3.1.7"
 	},
 	"devDependencies": {
 		"@types/node": "^22.10.1",
-		"typescript": "^5.7.2",
-		"ts-node": "^10.9.1"
+		"ts-node": "^10.9.1",
+		"typescript": "^5.7.2"
 	}
 }
